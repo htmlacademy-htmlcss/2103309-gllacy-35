@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Антонина Щербинина](https://up.htmlacademy.ru/htmlcss/35/user/2103309).
-* Наставник:[Дмитрий Гуляев](https://htmlacademy.ru/profile/id87930).
+* Наставник:[Дмитрий "MEOW" Гуляев](https://htmlacademy.ru/profile/id87930).
 
 ---
 
