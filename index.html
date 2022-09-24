@@ -7,12 +7,12 @@
     <script src="https://kit.fontawesome.com/463c7a2ea5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="GllacyShop.css">
     <title>HTML Academy: Глейси</title>
-
 </head>
 <body>
   <div class="wrapper">
 
-    <header class="header container">
+<!----HEADER---->
+    <header class="header">
         <div class="logo">
             <img src="Logo.svg" alt="GllacyShop">
         </div>
@@ -31,69 +31,73 @@
         </nav>
     </header>
 
-    <main class="main">
+<!----MAIN---->
+  <main class="main">
     <div class="main_text">
-        <h2 class="main_header">Карамельный пломбир с маршмеллоу</h2>
+        <h2 class="main_header">Карамельный пломбир<br>с маршмеллоу</h2>
         <p class="main_phar">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет<br>сердца сладкоежек всех возрастов.</p>
         <a href="#" class="main_button">Заказать</a>
     </div>
     <div class="main_slider">
-        <div class="main_picture">
-            <img  src="IceCream.svg" alt="IceCream">
-            <div class="main_picture2">
-                <img  src="IceCream2.svg" alt="IceCream">
+      <div class="main_picture">
+            <img  src="/MAIN_ICECREAM/IceCreamYELLOW.svg" alt="IceCream">
+            <div class="main_picture2" >
+                <img  src="/Little_icecream_YELLOW/IceCream2.svg" alt="IceCream">
             </div>
             <div class="main_picture3">
-                <img  src="IceCream3.svg" alt="IceCream">
+                <img  src="/Little_icecream_YELLOW/IceCream3.svg" alt="IceCream">
             </div>
-        </div>
-        <form action="#" class="main_slider__arrows">
-            <input  type="image" src="arrow.svg">
-            <input  type="image" src="arrow.svg">
-        </form>
+            <form action="#" class="main_slider__arrows">
+              <input  type="image" src="arrow.svg">
+              <input  type="image" src="arrow.svg">
+            </form>
+      </div>
     </div>
-    </main>
+    <div class="slider_bottom_navigation">
+      <div class="slider_dots">
+          <img src="dot.svg" alt="Листалка">
+          <img src="dot.svg" alt="Листалка">
+          <img src="dot.svg" alt="Листалка">
+      </div>
+      <div class="slider_contacts">
+          <a href="#" target="_blank"><img src="telegram.svg" alt="telegram"></a>
+          <a href="#" target="_blank"><img src="vk.svg" alt="VK"></i></a>
+          <a href="#" target="_blank"><img src="youtube.svg" alt="youtube"></i></a>
+      </div>
+    </div>
+  </main>
 
-    <div class="main_contacts">
+<!----FIRST_OFFER---->
+  <section class="first_offer">
+      <h2 class="repetitive_header">Заказывайте мороженое и получите подарки!</h2>
+    <div>
+      <div class="first_offer_left">
         <div>
-            <img src="dot.svg" alt="Листалка">
-            <img src="dot.svg" alt="Листалка">
-            <img src="dot.svg" alt="Листалка">
-        </div>
-        <div>
-            <a href="#" target="_blank"><img src="telegram.svg" alt="telegram"></a>
-            <a href="#" target="_blank"><img src="vk.svg" alt="VK"></i></a>
-            <a href="#" target="_blank"><img src="youtube.svg" alt="youtube"></i></a>
-        </div>
-        </div>
-    <section class="first_offer">
-        <h2 class="repetitive_header">Заказывайте мороженое и получите подарки!</h2>
-        <div>
-        <div class="first_offer_left">
-            <div>
-            <h3>Малинка даром</h3>
-            <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#" class="main_button">Хочу подарок</a>
+          <h3>Малинка даром</h3>
+          <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#" class="main_button">Хочу подарок</a>
         </div>
             <div class="first_offer_pic">
-                <img src="strawsberry.svg" alt="strawsberry">
+              <img src="strawsberry.svg" alt="strawsberry">
             </div>
         </div>
         <div class="first_offer_right">
-            <div>
+          <div>
             <h3>Маршмеллоу даром</h3>
             <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
             <a href="#" class="main_button">Хочу подарок</a>
-            </div>
+          </div>
             <div class="first_offer_pic">
-                <img src="marshmellow.svg" alt="marshmellow">
+              <img src="marshmellow.svg" alt="marshmellow">
             </div>
         </div>
-        </div>
-    </section>
-    <section class="another_offer">
-        <h2 class="repetitive_header">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <div class="another_offer_icecreams">
+    </div>
+  </section>
+
+<!----ANOTHER_OFFER---->
+  <section class="another_offer">
+      <h2 class="repetitive_header">Попробуйте самые популярные вкусы нашего мороженого</h2>
+    <div class="another_offer_icecreams">
         <div class="another_offer_icecream">
             <h3>Малинка</h3>
             <span>Сливочное мороженое с малиновым джемом</span>
@@ -131,46 +135,53 @@
             </div>
         </div>
     </div>
-    </section>
-    <section class="gllacyShop">
+  </section>
+
+<!----GLLACYSHOP---->
+  <section class="gllacyShop">
         <img class="gllacyShop_substrate" src="Вафля-фон.png" alt="Вафля">
         <h1 class="repetitive_header">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-        <div>
-            <img src="Мороженое.svg" alt="Мороженое">
-            <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
-        </div>
-        <div>
-            <img src="Листик.svg" alt="Листик">
-            <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-        </div>
-        <div>
-            <img src="Корова.svg" alt="Корова">
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div>
-            <img src="Градусник.svg" alt="Градусник">
-            <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
-        </div>
-    </section>
-    <article class=" gllacy_serving">
-      <div class="gllacy_serving_left">
+    <div>
+        <img src="Мороженое.svg" alt="Мороженое">
+        <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+    </div>
+      <div>
+        <img src="Листик.svg" alt="Листик">
+        <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+    </div>
+    <div>
+        <img src="Корова.svg" alt="Корова">
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+    </div>
+    <div>
+        <img src="Градусник.svg" alt="Градусник">
+        <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+    </div>
+  </section>
+
+<!----GLLACY_SERVING---->
+  <article class=" gllacy_serving">
+    <div class="gllacy_serving_left">
         <span>Новое в нашем блоге</span>
         <h3>10 способов сервировки фруктовых щербетов к столу</h3>
-      </div>
-      <div class="gllacy_serving_right">
+    </div>
+    <div class="gllacy_serving_right">
+        <img  class ="post_bg" src="Post_BG.png" alt="Post_BG">
         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда<br> в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="#">
-          <input class="input_area" type="email" value="email@example.com">
-          <input class="input_button" type="submit" value="Отправить">
-        </form>
-      </div>
-    </article>
-    <section class="footer">
-      <div class="footer_inner_left">
+      <form action="#">
+        <input class="input_area" type="email" value="email@example.com">
+        <input class="input_button" type="submit" value="Отправить">
+      </form>
+    </div>
+  </article>
+
+<!----FOOTER---->
+  <section class="footer">
+    <div class="footer_inner_left">
         <h3 class="repetitive_header footer_header">Доставка любимого мороженого на дом</h3>
         <p>Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-      </div>
-      <div class="footer_inner_right">
+    </div>
+    <div class="footer_inner_right">
         <div>
           <p class="footer_input_header">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <form class="footer_input" action="#">
@@ -193,29 +204,31 @@
               <input class="input_button" type="submit">
             </div>
         </form>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="footer_contacts">
-      <div class="footer_contacts_adress">
+<!----FOOTER_CONTACTS---->
+  <section class="footer_contacts">
+    <div class="footer_contacts_adress">
         <p>Адрес главного офиса и офлайн-магазина:</p>
         <h3>наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</h3>
         <span>Для заказов по телефону:</span>
         <a href="tel">+7 (812) 812-12-12</a>
         <span>(с 10 до 20 ежедневно)</span>
-        <form action="#">
-          <input class="input_button" type="submit" value="Форма обратной связи">
-        </form>
-      </div>
-    </section>
+      <form action="#">
+        <input class="input_button" type="submit" value="Форма обратной связи">
+      </form>
+    </div>
+  </section>
 
-    <footer class="footer_end">
-        <div class="footer_end_link">
-          <a href="https://t.me/htmlacademy" target="_blank"><img src="telegram.svg" alt="telegram"></a>
-          <a href="https://vk.com/htmlacademy" target="_blank"><img src="vk.svg" alt="VK"></i></a>
-          <a href="https://www.youtube.com/user/html" target="_blank"><img src="youtube.svg" alt="youtube"></i></a>
-      </div>
-      <ul class="footer_end_info">
+<!----FOOTER_END---->
+  <footer class="footer_end">
+    <div class="footer_end_link">
+      <a href="https://t.me/htmlacademy" target="_blank"><img src="telegram.svg" alt="telegram"></a>
+      <a href="https://vk.com/htmlacademy" target="_blank"><img src="vk.svg" alt="VK"></i></a>
+      <a href="https://www.youtube.com/user/html" target="_blank"><img src="youtube.svg" alt="youtube"></i></a>
+    </div>
+    <ul class="footer_end_info">
       <li class="footer_end_info_heart"><a href="#" style="font-weight:700;"></i>Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
@@ -223,8 +236,7 @@
     </ul>
     <div>
       <a href="https://htmlacademy.ru/"><img src="HTMLAcademy.svg" alt="HTMLAcademy"></a>
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
