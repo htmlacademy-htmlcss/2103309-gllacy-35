@@ -1,7 +1,11 @@
 # Личный проект «Глейси»
 
 * Студент: [Антонина Щербинина](https://up.htmlacademy.ru/htmlcss/35/user/2103309).
+<<<<<<< HEAD
 * Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/id87930).
+=======
+* Наставник:[Дмитрий Гуляев](https://htmlacademy.ru/profile/id87930).
+>>>>>>> parent of d3ace61 (Добавляю прозвище наставника)
 
 ---
 
