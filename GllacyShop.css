@@ -1,9 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Inter:wght@400;700&display=swap');
-
-
-/*__Стили для всех или нескольких объектов__*/
 
 body {
 
@@ -14,13 +9,7 @@ body {
   color: #2D3440;
   }
 
-.ping {
-  background: #FEAFC3;
-}
 
-.blue {
-  background:#69A9FF;
-}
 
 .wrapper {
   max-width: 1170px;
@@ -33,10 +22,14 @@ body {
 
 }
 
-h1,h2,h3,h4,h5,h6, p {
+h1,h2,h3,h4,h5,h6 {
 
   margin: 0;
 
+}
+
+p {
+  margin: 0;
 }
 
 .repetitive_header {
@@ -185,15 +178,6 @@ h1,h2,h3,h4,h5,h6, p {
   left: -5px;
   z-index: -1;
 }
-.PING::after {
-
-  background: #FFCBD8;
-}
-
-.BLUE::after  {
-
-  background:#9FC8FF;
-}
 
 .main_slider {
 
@@ -235,36 +219,11 @@ h1,h2,h3,h4,h5,h6, p {
   z-index: -1;
 }
 
-.PING:after, .PING:after {
-
-  background: #FFCBD8;
-}
-
-.BLUE:after, .BLUE:after {
-
-  background: #9FC8FF;
-}
-
 .slider_bottom_navigation {
 
   display: flex;
   grid-column: 1 / 3;
   justify-content: space-between;
-}
-
-.slider_dots img:not(:last-child) {
-
-  opacity: .4;
-}
-
-.PING_dots img:not(:first-child) {
-
-  opacity: .4;
-}
-
-.BLUE_dots img:not(:nth-child(2)) {
-
-  opacity: .4;
 }
 
 .slider_contacts a > img {
@@ -710,7 +669,7 @@ color: #565C66;
 
 display: flex;
 justify-content: space-between;
-padding-bottom: 48px;
+margin-bottom: 48px;
 
 }
 
