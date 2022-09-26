@@ -6,7 +6,124 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<!----HEADER---->
+  <header class="main_header">
+    <div class="page_logo">
+        <h1 class="visually_hidden">GllacyShop</h1>
+        <img src="Logo.svg" alt="Logo of GllacyShop">
+    </div>
+    <nav class="header_nav">
+          <ul class="header_nav_list">
+              <li class="header_nav_item"><a href="catalog.html" class="header_nav_link">Каталог</a></li>
+              <li class="header_nav_item"><a href="shipping_and_payment.html" class="header_nav_link">Доставка и оплата</a></li>
+              <li class="header_nav_item"><a href="about.html" class="header_nav_link">О компании</a></li>
+          </ul>
+          <ul class="header_nav_list header_nav_user">
+              <li class="header_nav_item"><a href="tel:+78005558628" class="header_nan_link">+7 800 555-86-28</a></li>
+              <li class="header_nav_item"><a href="#" class="header_nav_link"><span class="visually_hidden">Поиск</span></a></li>
+              <li class="header_nav_item"><a href="#" class="header_nav_link">Вход</a></li>
+              <li class="header_nan_item"><a href="#" class="header_nav_link">2 товара</a></li>
+          </ul>
+      </nav>
+  </header>
 
+<!----MAIN_INDEX---->
+<main class="main_index">
+  <section class="slider">
+    <h2 class="visually_hidden">Разновидности мороженого</h2>
+      <h3 class="main_page_info_title">Нежный пломбир с клубничным джемом</h3>
+      <p class="main_page_info_description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+      <img class="slider_icecream" src="#" alt="Вкусы мороженого">
+      <button type="button" class="slider_button button_prev"><span class="visually_hidden">Предыдущее мороженое</span></button>
+      <button type="button" class="slider_button button_next"><span class="visually_hidden">Следующее мороженое</span></button>
+    <ol class="slider_pagination">
+      <li class="slider_pagination_item"><button type="button"><img class="slider_icecream" src="#" alt="Нежный пломбир с клубничным джемом"></button></li>
+      <li class="slider_pagination_item"><button type="button"><img class="slider_icecream" src="#" alt="Сливочное мороженое со вкусом банана"></button></li>
+      <li class="slider_pagination_item"><button type="button"><img class="slider_icecream" src="#" alt="Карамельный пломбир с маршмеллоу"></button></li>
+    </ol>
+    <a class="button button_all" href="#">Заказать</a>
+  </section>
+
+<!----MAIN_OFFERS---->
+  <section class="main_offer">
+    <h2 class="title main_offer_header">Заказывайте мороженое и получайте подарки!</h2>
+      <ul class="offer_list">
+      <li class="offer_item">
+        <h3 class="offer_list_title">Малинка даром!</h3>
+        <p class="offer_list_description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a href="#">Хочу подарок</a>
+        <img class="offer_list_image" src="#" alt="Малинка в рожке">
+      </li>
+      <li class="offer_item">
+          <h3 class="offer_list_title">Маршмеллоу даром!</h3>
+          <p class="offer_list_description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <a href="#">Хочу подарок</a>
+          <img class="offer_list_image" src="#" alt="Маршмеллоу в рожке">
+      </li>
+    </ul>
+  </section>
+
+<!----OTHER_OFFERS---->
+  <section class="popular_offers">
+    <h2 class="title popular_offers_header">Попробуйте самые популярные вкусы нашего мороженого</h2>
+    <ul class="popular_offers_list">
+      <li class="popular_offers_list_item">
+        <img class="popular_icecream" src="#" alt="Шарик малинового мороженного">
+        <h3 class="popular_offers_title">Малинка</h3>
+        <p class="popular_offers_description">Сливочное мороженое с малиновым джемом</p>
+        <b>310 ₽/кг</b>
+        <a href="#"><span class="visually_hidden">Корзина</span></a>
+      </li>
+      <li class="popular_offers_list_item">
+        <img class="popular_icecream" src="#" alt="Шарик фисташкового мороженного">
+        <h3 class="popular_offers_title">Фисташка</h3>
+        <p class="popular_offers_description">Фисташковый пломбир с кусочками шоколада</p>
+        <b>310 ₽/кг</b>
+        <a href="#"><span class="visually_hidden">Корзина</span></a>
+      </li>
+      <li class="popular_offers_list_item">
+        <img class="popular_icecream" src="#" alt="Шарик черничного мороженного">
+        <h3 class="popular_offers_title">Черника</h3>
+        <p class="popular_offers_description">Крем-брюле с черничным джемом</p>
+        <b>310 ₽/кг</b>
+        <a href="#"><span class="visually_hidden">Корзина</span></a>
+      </li>
+      <li class="popular_offers_list_item">
+        <img class="popular_icecream" src="#" alt="Шарик мороженного Бабл-гам">
+        <h3 class="popular_offers_title">Бабл-гам</h3>
+        <p class="popular_offers_description">Ванильный пломбир со сладкой посыпкой</p>
+        <b>310 ₽/кг</b>
+        <a href="#"><span class="visually_hidden">Корзина</span></a>
+      </li>
+    </ul>
+  </section>
+
+<!----ABOUT_GLLACYSHOP---->
+  <section class="about_gllacyshop">
+    <h2 class="title about_gllacyshop_header">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+    <ul class="about_gllacyshop_list">
+      <li class="about_gllacyshop_item">
+        <img class="about_gllacyshop_icon" src="#" alt="Мороженое на палочке">
+        <h3 class="visually_hidden">Лучшее оборудование</h3>
+        <p class="about_gllacyshop_description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+      </li>
+      <li class="about_gllacyshop_item">
+        <img class="about_gllacyshop_icon" src="#" alt="Коровка">
+        <h3 class="visually_hidden">Проверенные поставщики</h3>
+        <p class="about_gllacyshop_description">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+      </li>
+      <li class="about_gllacyshop_item">
+        <img class="about_gllacyshop_icon" src="#" alt="Листик с дерева">
+        <h3 class="visually_hidden">Высочайшее качество сырья</h3>
+        <p class="about_gllacyshop_description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+      </li>
+      <li class="about_gllacyshop_item">
+        <img class="about_gllacyshop_icon" src="#" alt="Градусник">
+        <h3 class="visually_hidden">Бережная доставка</h3>
+        <p class="about_gllacyshop_description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+      </li>
+    </ul>
+  </section>
+</main>
   </body>
 </html>
