@@ -22,16 +22,17 @@
               <li class="header_nav_item"><a href="tel:+78005558628" class="header_nan_link">+7 800 555-86-28</a></li>
               <li class="header_nav_item"><button type="button" class="button button_active"><span class="visually_hidden">Поиск</span></button></li> <!--действие на странице -> button -->
               <li class="header_nav_item"><button type="button" class="button button_active">Вход</button></li> <!--действие на странице -> button -->
-              <li class="header_nan_item"><button type="button" class="button button_active">2 товара</button></li> <!--действие на странице -> button -->
+              <li class="header_nan_item"><a type="button" class="button button_active">2 товара</a></li> <!--действие на странице -> button -->
           </ul>
       </nav>
-      <div class="catalog"> <!--выбор в каталоге-->
-      <select class="catalog_list" id="catalog" name="header_select"  >
-        <option></option>
-        <option></option>
-        <option></option>
-        <option></option>
-      </select>
+      <div class="popap_catalog visually_hidden"> <!--выбор в каталоге-->
+      <ul class="catalog_list">
+        <li class="catalog_item"><a href="#">Новинки</a></li>
+        <li class="catalog_item"><a href="#">Сливочное</a></li>
+        <li class="catalog_item"><a href="#">Щербеты</a></li>
+        <li class="catalog_item"><a href="#">Фруктовый лед</a></li>
+        <li class="catalog_item"><a href="#">Мелорин</a></li>
+      </ul>
     </div>
       <div class="popap_card visually_hidden">Корзина</div>  <!--появление корзины-->
       <div class="popap_account visually_hidden">Личный кабинет</div> <!--появление личного кабинета-->
@@ -171,7 +172,7 @@
         </p>
         <p class="delivery_form_address">
         <label for="address">Адрес</label>
-          <input type="text" name="text" id="address"></input>
+          <input type="text" name="address" id="address"></input>
         </p>
         <button class="button" type="submit">Oтправить</button>
       </form>
