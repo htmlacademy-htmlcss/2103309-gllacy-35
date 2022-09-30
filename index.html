@@ -37,18 +37,19 @@
     </div>
       <div class="popap_card visually_hidden">Корзина</div>  <!--появление корзины-->
 
-    <form  class="popap_form visually_hidden" action="https://echo.htmlacademy.ru" method="post">
-      <label for="search" class="popap_search"><span class="visually_hidden">Поле поиска</span></label>
+      <div class="search_area">
         <input id="search" type="search" name="search" placeholder="Поиск по сайту"><!--появление поля поиска-->
+      </div>
 
+    <form  class="popap_form visually_hidden" action="https://echo.htmlacademy.ru" method="post">
         <p><label for="account" class="popap_account"><span class="visually_hidden">E-mail</span></label>
         <input id="account" type="text" name="account" placeholder="email@example.com"></p>
 
         <p><label for="password" class="popap_password"><span class="visually_hidden">Пароль</span></label>
         <input id="password" type="password" name="account"></p>
-
+        <button class="button button_account" href="#">Войти</button>
       </form>
-      <a class="button button_account" href="#">Войти</a>
+
       <a href="#">Забыли пароль?</a>
       <a href="#">Регистрация</a>
   </header>
