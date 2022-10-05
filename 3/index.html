@@ -12,13 +12,13 @@
   <nav class="header_nav">
     <ul class="header_nav_list">
       <li class="header_nav_item header_active_catalog">
-        <a href="#">Каталог</a>  <!--Вспомогательная иконка, через CSS-->
+        <a href="#" class="header_nav_link ">Каталог</a>  <!--Вспомогательная иконка, через CSS-->
           <ul class="catalog_list">
-            <li class="catalog_item"><a href="#"><b>Новинки</b></a></li>
-            <li class="catalog_item"><a href="#">Сливочное</a></li>
-            <li class="catalog_item"><a href="#">Щербеты</a></li>
-            <li class="catalog_item"><a href="#">Фруктовый лед</a></li>
-            <li class="catalog_item"><a href="#">Мелорин</a></li>
+            <li class="catalog_item"><a href="#" class="header_nav_link"><b>Новинки</b></a></li>
+            <li class="catalog_item"><a href="#" class="header_nav_link">Сливочное</a></li>
+            <li class="catalog_item"><a href="#" class="header_nav_link">Щербеты</a></li>
+            <li class="catalog_item"><a href="#" class="header_nav_link">Фруктовый лед</a></li>
+            <li class="catalog_item"><a href="#" class="header_nav_link">Мелорин</a></li>
           </ul>
       </li>
       <li class="header_nav_item">
@@ -31,10 +31,10 @@
 
     <ul class="header_nav_list header_nav_user">
       <li class="header_nav_item">
-        <a href="tel:+78005558628" class="header_nan_link">+7 800 555-86-28</a>
+        <a href="tel:+78005558628" class="header_nav_link">+7 800 555-86-28</a>
       </li>
       <li class="header_nav_item">
-        <a href="#">
+        <a href="#" class="header_nav_link user_nav_items">
           <svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/>
           </svg>
@@ -47,7 +47,7 @@
       <li class="header_nav_item">
         <ul class="user_login_list">
           <li class="user_login_item">
-            <a href="#">
+            <a href="#" class="header_nav_link user_nav_items">
               <svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" fill="#2D3440"/>
               </svg>
@@ -57,19 +57,19 @@
             <form  class="user_login_form" action="https://echo.htmlacademy.ru" method="post">
               <input type="text" name="email" class="user_login_email" placeholder="email@example.com">
               <input type="password" name="password" class="user_login_password">
-              <button type="button" class="user_login_button">Войти</button>
+              <button type="button" class="user_login_button ">Войти</button>
             </form>
           <ul class="user_login_help_list">
-            <li class="user_login_help_item"><a href="#">Забыли пароль?</a></li>
-            <li class="user_login_help_item"><a href="#">Регистрация</a></li>
+            <li class="user_login_help_item"><a href="#" class="header_nav_link">Забыли пароль?</a></li>
+            <li class="user_login_help_item"><a href="#" class="header_nav_link">Регистрация</a></li>
           </ul>
           </li>
         </ul>
-      <li class="header_nan_item">
+      <li class="header_nav_item">
         <svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/>
         </svg>
-          <a class="header_nav_card" href="#"><span class="visually_hidden">Ваша корзина пока пуста</span></a>
+          <a class="header_nav_link user_nav_items" href="#"><span>Ваша корзина пока пуста</span></a>
       </li>
     </ul>
   </nav>
@@ -142,20 +142,20 @@
         </li>
       </ul>
     </section>
-  <!--MAIN_OFFERS-->
+  <!--MAIN_OFFER-->
     <section class="main_offer">
       <h2 class="title main_offer_title">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="offer_list">
         <li class="offer_item">
           <h3 class="offer_list_title">Малинка даром!</h3>
           <p class="offer_list_description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="#">Хочу подарок</a>
+          <a href="#" class="button">Хочу подарок</a>
           <img class="offer_list_image" width="219" height="268" src="images/strawsberry.png" alt="Малинка в рожке.">
         </li>
         <li class="offer_item">
             <h3 class="offer_list_title">Маршмеллоу даром!</h3>
             <p class="offer_list_description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежныхзефирок совершенно бесплатно.</p>
-            <a href="#">Хочу подарок</a>
+            <a href="#" class="button">Хочу подарок</a>
             <img class="offer_list_image" width="219" height="268" src="images/marshmello.png" alt="Маршмеллоу в рожке.">
         </li>
       </ul>
@@ -166,9 +166,9 @@
       <ul class="popular_offers_list">
         <li class="popular_offers_list_item">
           <img class="popular_icecream" width="168" height="168" src="images/icecream_catalog/icecream_ball_1.jpg" alt="">
-          <h3 class="popular_offers_title">Малинка</h3>
-          <p class="popular_offers_description">Сливочное мороженое с малиновым джемом</p>
-          <b>310 ₽/кг</b>
+          <h3 class="offers_title">Малинка</h3>
+          <p class="offers_description">Сливочное мороженое с малиновым джемом</p>
+          <b class="price">310 ₽/кг</b>
           <a href="#">
             <span class="visually_hidden">Корзина</span>
             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,9 +179,9 @@
         </li>
         <li class="popular_offers_list_item">
           <img class="popular_icecream" width="168" height="168" src="images/icecream_catalog/icecream_ball_2.jpg" alt="">
-          <h3 class="popular_offers_title">Фисташка</h3>
-          <p class="popular_offers_description">Фисташковый пломбир с кусочками шоколада</p>
-          <b>310 ₽/кг</b>
+          <h3 class="offers_title">Фисташка</h3>
+          <p class="offers_description">Фисташковый пломбир с кусочками шоколада</p>
+          <b class="price">310 ₽/кг</b>
           <a href="#"><span class="visually_hidden">Корзина</span>
             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="32" rx="16" fill="#FF2F64"/>
@@ -191,9 +191,9 @@
         </li>
         <li class="popular_offers_list_item">
           <img class="popular_icecream" width="168" height="168" src="images/icecream_catalog/icecream_ball_3.jpg" alt="">
-          <h3 class="popular_offers_title">Черника</h3>
-          <p class="popular_offers_description">Крем-брюле с черничным джемом</p>
-          <b>310 ₽/кг</b>
+          <h3 class="offers_title">Черника</h3>
+          <p class="offers_description">Крем-брюле с черничным джемом</p>
+          <b class="price">310 ₽/кг</b>
           <a href="#"><span class="visually_hidden">Корзина</span>
             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="32" rx="16" fill="#FF2F64"/>
@@ -203,9 +203,9 @@
         </li>
         <li class="popular_offers_list_item">
           <img class="popular_icecream" width="168" height="168" src="images/icecream_catalog/icecream_ball_4.jpg" alt="">
-          <h3 class="popular_offers_title">Бабл-гам</h3>
-          <p class="popular_offers_description">Ванильный пломбир со сладкой посыпкой</p>
-          <b>310 ₽/кг</b>
+          <h3 class="offers_title">Бабл-гам</h3>
+          <p class="offers_description">Ванильный пломбир со сладкой посыпкой</p>
+          <b class="price">310 ₽/кг</b>
           <a href="#"><span class="visually_hidden">Корзина</span>
             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="32" rx="16" fill="#FF2F64"/>
@@ -216,53 +216,54 @@
       </ul>
     </section>
   <!--ABOUT_GLLACYSHOP-->
-    <section class="about_gllacyshop">
-      <h1 class="visually_hidden">Глейси - магазин мороженного</h1>
+
+  <section class="about_gllacyshop">
+    <h1 class="visually_hidden">Глейси - магазин мороженного</h1>
       <h2 class="title about_gllacyshop_title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
       <ul class="about_gllacyshop_list">
         <li class="about_gllacyshop_item">
           <h3 class="visually_hidden">Лучшее оборудование</h3>
-          <p class="about_gllacyshop_description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+          <p class="about_gllacyshop_description gllacyshop_icecream_icon">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
         </li>
         <li class="about_gllacyshop_item">
           <h3 class="visually_hidden">Проверенные поставщики</h3>
-          <p class="about_gllacyshop_description">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="about_gllacyshop_description gllacyshop_cow_icon">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
         </li>
         <li class="about_gllacyshop_item">
           <h3 class="visually_hidden">Высочайшее качество сырья</h3>
-          <p class="about_gllacyshop_description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+          <p class="about_gllacyshop_description gllacyshop_leaf_icon">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
         </li>
         <li class="about_gllacyshop_item">
           <h3 class="visually_hidden">Бережная доставка</h3>
-          <p class="about_gllacyshop_description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+          <p class="about_gllacyshop_description gllacyshop_termometr_icon">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
-    </section>
+
+  </section>
+
 </main>
 
-<!--BLOG-->
-  <article class="blog">
-    <h2 class="visually_hidden">Новости блога</h2>
-    <h3 class="blog_subtitle">Новое в нашем блоге</h3>
-    <a class="blog_new_title" href="new.html">10 способов сервировки фруктовых щербетов к столу</a>
-  </article>
+
 
 <!--SUBSCRIBE-->
+<div class="subscribe_wrapper">
   <section class="subscribe">
     <h2 class="visually_hidden">Подписка на рассылку</h2>
     <p class="subscribe_description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
     <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post">
       <label for="email">Почта</label>
         <input type="text" id="email" name="subscribe_email" placeholder="meow@pochta.prr">
-        <button class="button" type="submit">Отправить</button>
+        <button class="button button_submit" type="submit">Отправить</button>
     </form>
   </section>
+</div>
 
 <!--DELIVERY-->
   <section class="delivery">
     <h2 class="delivery_title">Доставка любимого мороженого на дом</h2>
     <p class="delivery_description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       <form class="delivery_form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="delivery_form_text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <p class="delivery_form_date">
         <label for="date">Дата</label>
           <input type="text" id="date" name="date" placeholder="01.01.2001">
@@ -275,21 +276,23 @@
         <label for="address">Адрес</label>
           <input type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
         </p>
-        <button class="button" type="submit">Oтправить</button>
+        <button class="button button_submit" type="submit">Oтправить</button>
       </form>
   </section>
 
 <!--CONTACTS-->
   <section class="contacts">
-    <h2 class="visually_hidden">Контакты</h2>
-    <p class="contacts_subtitle">Адрес главного офиса и офлайн-магазина:</p>
-    <address class="contacts_address">
-      <p class="contacts_address_text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <p class="contacts_subtitle">Для заказов по телефону:</p>
-      <a class="contacts_tel" href="tel:88128121212">+7 (812) 812-12-12</a>
-    </address>
-      <p class="contacts_time">(с 10 до 20 ежедневно)</p>
-      <button class="button" type="button">Форма обратной связи</button>
+    <div class="contacts_box">
+      <h2 class="visually_hidden">Контакты</h2>
+      <p class="contacts_subtitle">Адрес главного офиса и офлайн-магазина:</p>
+      <address class="contacts_address">
+        <p class="contacts_address_text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <p class="contacts_subtitle">Для заказов по телефону:</p>
+        <a class="contacts_tel" href="tel:88128121212">+7 (812) 812-12-12</a>
+      </address>
+        <p class="contacts_time">(с 10 до 20 ежедневно)</p>
+        <button class="button button_submit" type="button">Форма обратной связи</button>
+    </div>
   </section>
 
 <!--MAIN_FOOTER-->
