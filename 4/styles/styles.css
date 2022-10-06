@@ -1,7 +1,7 @@
 /* Шрифты */
 @font-face {
   font-family: "Inter";
-  src: url(/fonts/inter-400.woff2) format("woff2");
+  src: url(../fonts/inter-400.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url(/fonts/inter-700.woff2) format("woff2");
+  src: url(../fonts/inter-700.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url(/fonts/inter-900.woff2) format("woff2");
+  src: url(../fonts/inter-900.woff2) format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -81,7 +81,7 @@ body {
 }
 .header_active_catalog::after {
   content: "";
-  background: url(/images/arrow_catalog.svg) no-repeat;
+  background: url(../images/arrow_catalog.svg) no-repeat;
   display: block;
   position: absolute;
   width: 11px;
@@ -231,7 +231,7 @@ content: "";
 .about_gllacyshop {
 
   background-color:  #F3EBDC;
-  background-image: url(/images/backgrounds/waffle_background.jpg);
+  background-image: url(../images/backgrounds/waffle_background.jpg);
   background-size: cover;
   width: auto;
   text-align: center;
@@ -255,7 +255,7 @@ content: "";
 .blog {
 
   background-color: #FEAFC3;
-  background-image: url(/images/backgrounds/blog_background.jpg);
+  background-image: url(../images/backgrounds/blog_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -280,7 +280,7 @@ content: "";
 .subscribe {
 
   background-color: #FEAFC3;
-  background: url(/images/backgrounds/post_background.jpg) no-repeat;
+  background: url(../images/backgrounds/post_background.jpg) no-repeat;
   background-size: cover;
   color: #565C66;
   border-radius: 16px;
@@ -295,7 +295,7 @@ content: "";
 .delivery {
 
   background-color: #FEAFC3;
-  background-image: url(/images/backgrounds/delivery_background.jpg);
+  background-image: url(../images/backgrounds/delivery_background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
@@ -323,7 +323,7 @@ content: "";
 .contacts {
 
   background-color: #FEAFC3;
-  background-image: url(/images/backgrounds/feedback_background.jpg);
+  background-image: url(../images/backgrounds/feedback_background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
@@ -380,7 +380,7 @@ color: #565C66;
 .heart_link::after {
 
 content: "";
-  background: url(/images/other_icons/heart.svg) no-repeat;
+  background: url(../images/other_icons/heart.svg) no-repeat;
   display: block;
   position: absolute;
   width: 16px;
