@@ -94,7 +94,6 @@ body {
   margin: 0;
 }
 
-
 /*  header  */
 .main_header {
   color: #2D3440;
@@ -159,6 +158,10 @@ body {
   padding: 6px 16px;
 }
 
+.header_active_catalog a:first-of-type {
+  padding-right: 38px;
+}
+
 .header_nav_user .header_nav_item:not(:last-child) {
   margin-right: 16px;
 }
@@ -214,6 +217,8 @@ body {
   margin: 0;
   padding: 0;
   list-style-type:  none;
+  display: flex;
+  column-gap: 41px;
 }
 
 .slider_item {
@@ -224,6 +229,10 @@ body {
 
 .slider_item_text {
   max-width: 470px;
+}
+
+.main_slider .slider_item_text {
+  padding-left: 40px;
 }
 
 .slider_item_picture {
@@ -400,6 +409,10 @@ body {
   color: #565C66;
   margin: 0;
   padding-left: 64px;
+}
+
+.gllacyshop_icecream_icon,
+.gllacyshop_cow_icon {
   margin-bottom: 40px;
 }
 
