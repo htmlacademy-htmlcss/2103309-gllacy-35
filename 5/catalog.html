@@ -14,8 +14,8 @@
   <nav class="header_nav">
     <ul class="header_nav_list">
       <li class="header_nav_item header_active_catalog">
-        <a href="#" class="header_nav_link ">Каталог</a>
-          <ul class="catalog_list visually_hidden">
+        <a href="#" class="header_nav_link">Каталог</a>
+          <ul class="catalog_list">
             <li class="catalog_item"><a href="#" class="header_nav_link"><b>Новинки</b></a></li>
             <li class="catalog_item"><a href="#" class="header_nav_link">Сливочное</a></li>
             <li class="catalog_item"><a href="#" class="header_nav_link">Щербеты</a></li>
@@ -42,7 +42,7 @@
           </svg>
             <span class="visually_hidden">Поиск</span>
         </a>
-          <form class="header_nav_search visually_hidden" action="https://echo.htmlacademy.ru" method="post">
+          <form class="header_nav_search" action="https://echo.htmlacademy.ru" method="post">
             <input type="text" name="search" class="search_form" placeholder="Поиск по сайту">
           </form>
       </li>
@@ -55,7 +55,7 @@
               </svg>
                 <span>Вход</span>
             </a>
-            <div class="user_login_active visually_hidden">
+            <div class="user_login_active">
             <p>Личный кабинет</p>
             <form  class="user_login_form" action="https://echo.htmlacademy.ru" method="post">
               <input type="text" name="email" class="user_login_email" placeholder="email@example.com">
@@ -78,7 +78,6 @@
       </li>
     </ul>
   </header>
-
 <!--MAIN_CATALOG-->
   <main class="main_catalog main_container">
     <header class="catalog_header">
@@ -95,12 +94,10 @@
       </li>
       </ul>
     </header>
-
     <section class="catalog_products">
-      <h2 class="title">Сливочное мороженое</h2>
+      <h2 class="title catalog_title">Сливочное мороженое</h2>
       <h3 class="visually_hidden">Список товаров с фильтрами</h3>
       <form class="catalog_filter" action="https://echo.htmlacademy.ru"  method="post">
-
     <div class="sorting_line_one">
       <div class="sorting_list_wrapper">
         <select name="sorting_list" aria-label="Сортировка">
@@ -109,12 +106,10 @@
           <option class="sorting_item" value="expensive">сначала дорогие</option>
         </select>
       </div>
-
       <div class="sorting_list_wrapper">
         <label class="price_slider_range" for="price">Цена: 100 ₽ – 500 ₽</label>
           <input id="price" type="range" min="100" max="500" name="price">
       </div>
-
       <fieldset class="catalog_filter_group">
         <legend class="catalog_filter_title">Жирность</legend>
         <ul class="catalog_filter_list">
@@ -149,7 +144,6 @@
         </ul>
       </fieldset>
     </div>
-
     <div class="sorting_line_two">
       <fieldset class="catalog_filter_group">
         <legend class="catalog_filter_title">Наполнители</legend>
@@ -195,7 +189,6 @@
       </form>
     </div>
     </section>
-
       <ul class="produst_list">
         <li class="product_card"><!--№ 1-->
           <a class="product_card_link" href="product.html">
@@ -211,7 +204,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 2-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_2.jpg" alt="">
@@ -226,7 +218,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 3-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_3.jpg" alt="">
@@ -241,7 +232,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 4-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_4.jpg" alt="">
@@ -256,7 +246,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 5-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_5.jpg" alt="">
@@ -271,7 +260,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 6-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_6.jpg" alt="">
@@ -286,7 +274,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 7-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_7.jpg" alt="">
@@ -301,7 +288,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 8-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_8.jpg" alt="">
@@ -316,7 +302,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 9-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_9.jpg" alt="">
@@ -331,7 +316,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 10-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_10.jpg" alt="">
@@ -346,7 +330,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 11-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_11.jpg" alt="">
@@ -361,7 +344,6 @@
             </svg>
             </a>
         </li>
-
         <li class="product_card"><!--№ 12-->
           <a class="product_card_link" href="product.html">
             <img class="product_card_image" width="168" height="168" src="images/icecream_catalog/icecream_ball_12.jpg" alt="">
@@ -377,7 +359,6 @@
             </a>
         </li>
       </ul>
-
     <ul class="pagination">
       <li class="pagination-item">
         <a class="pagination_link pagination-prev pagination-disabled">
@@ -436,13 +417,11 @@
         </a>
       </li>
     </ul>
-
     <ul class="main_footer_info">
       <li class="main_footer_suppliers"><a class="footer_about_link heart_link" href="#">Для поставщиков</a></li>
       <li class="main_footer_documents"><a class="footer_about_link" href="#">Наши документы</a></li>
       <li class="main_footer_about"><a class="footer_about_link" href="#">О производстве</a></li>
       <li class="main_footer_standarts"><a class="footer_about_link" href="#">Экологические стандарты</a></li>
-
     </ul>
     <div class="html_academy">
       <a class="html_academy_logo" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.svg" alt="HTML Академия."></a>
