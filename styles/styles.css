@@ -130,6 +130,7 @@ body {
 .header_nav_user .contacts_phone {
   font-weight: 700;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .header_nav_list {
