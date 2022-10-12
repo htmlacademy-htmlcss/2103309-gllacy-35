@@ -412,7 +412,8 @@ body {
   margin-bottom: 107px;
 }
 
-.popular_icecream, .product_card_image {
+.popular_icecream,
+.product_card_image {
   position: relative;
   top: -51px;
   border-radius: 50%;
@@ -671,7 +672,8 @@ body {
   margin-bottom: 32px;
 }
 
-.contacts_address_text, .contacts_tel {
+.contacts_address_text,
+.contacts_tel {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -877,7 +879,7 @@ body {
   justify-content: flex-end
 }
 
-.pagination-item{
+.pagination-item {
   min-width: 24px;
   min-height: 24px;
   text-align: center;
@@ -902,10 +904,11 @@ body {
   height: 16px;
 }
 
-.button_pagination{
+.button_pagination {
   display: flex;
   padding: 41px;
 }
+
 /* feedback */
 .feedback {
   display: none;
