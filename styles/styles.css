@@ -115,12 +115,22 @@ body {
   position: absolute;
   width: 11px;
   height: 7px;
-  top: 10px;
-  left: 82px;
+  top: 12px;
+  right: 17px;
 }
 
-.contacts_phone {
+.header_nav {
+  margin-left: 16px;
+}
+
+.header_nav_user .header_nav_link {
+  padding-left:38px;
+}
+
+.header_nav_user .contacts_phone {
   font-weight: 700;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header_nav_list {
@@ -132,15 +142,38 @@ body {
 }
 
 .header_nav_user {
+  align-items: center;
   margin-left: auto;
 }
 
-.header_nav_user .header_nav_link {
-  padding: 8px;
+.header_nav_link {
+  color: #2D3440;
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 16px;
+  display: block;
+  position: relative;
 }
 
-.catalog_item, .header_nav_item {
+.header_nav_item .header_seach {
+  padding: 16px;
+}
+.header_nav_user .header_nav_item{
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.header_nav_user .header_nav_item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.catalog_item,
+.header_nav_item {
   list-style-type: none;
+}
+
+.catalog_item .header_nav_link {
+  padding: 0;
 }
 
 .catalog_list {
@@ -150,20 +183,12 @@ body {
   display: none;
 }
 
-.catalog_item .header_nav_link {
-  padding: 0;
-}
-
 .catalog_item {
   padding: 6px 16px;
 }
 
 .header_active_catalog a:first-of-type {
   padding-right: 38px;
-}
-
-.header_nav_user .header_nav_item:not(:last-child) {
-  margin-right: 16px;
 }
 
 .header_nav_search {
@@ -189,21 +214,22 @@ body {
 }
 
 .user_nav_items {
-  background:#FCFCFC4D;
+  background-color: #FCFCFC4D;
   border-radius: 30px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
-.header_nav_link {
-  color: #2D3440;
-  text-decoration: none;
-  background-color: #FEAFC3;
-  text-align: center;
-  padding: 8px 16px;
+.user_nav_items svg {
+  position:absolute;
+  left: 16px;
 }
 
-.user_nav_items {
-  background-color: #FFCBD8;
+.header_seach svg {
+  margin-right: 0;
+  left: 8px;
+  top: 7px;
 }
 
 /*  pages  */
@@ -250,6 +276,40 @@ body {
   position: absolute;
   top:20%;
   z-index: -1;
+}
+
+.slider_buttons_and_pag {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.slider_pagination,
+.main_social_media_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.main_social_media_item svg,
+.main_footer_item svg {
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 24px;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.slider-pagination-button-curren {
+  opacity: 1;
 }
 
 /* main_offer */
@@ -321,7 +381,7 @@ body {
 }
 
 .offer_list_image {
-  height: auto;
+  align-self: flex-end;
 }
 
 .offer_list_description {
@@ -353,7 +413,8 @@ body {
   margin-bottom: 107px;
 }
 
-.popular_icecream, .product_card_image {
+.popular_icecream,
+.product_card_image {
   position: relative;
   top: -51px;
   border-radius: 50%;
@@ -366,6 +427,7 @@ body {
   color: #2D3440;
   margin: 0;
 }
+
 .offers_description {
   font-size: 16px;
   line-height: 22px;
@@ -411,11 +473,6 @@ body {
   padding-left: 64px;
 }
 
-.gllacyshop_icecream_icon,
-.gllacyshop_cow_icon {
-  margin-bottom: 40px;
-}
-
 .about_gllacyshop_list {
   list-style-type: none;
   display: flex;
@@ -423,6 +480,11 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
+}
+
+.about_gllacyshop_list:last-child {
+  margin-bottom: 0;
 }
 
 .gllacyshop_icecream_icon,
@@ -550,10 +612,11 @@ body {
 
 .delivery_text {
   width: 371px;
-  margin-left: 100px;
+  padding-left: 100px;
 }
 
-.delivery_description,.delivery_form_text {
+.delivery_description,
+.delivery_form_text {
   color: #565C66;
   margin: 0;
 }
@@ -579,7 +642,7 @@ body {
   background-color: #FEAFC3;
   background-image: url(../images/backgrounds/feedback_background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   border-radius: 16px;
   display: flex;
 }
@@ -594,7 +657,7 @@ body {
   background-color: #fff;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   width: 343px;
-  height: 364px;
+  min-height: 364px;
   border-radius: 8px;
   padding: 40px;
   margin: 64px 0 64px 64px;
@@ -607,9 +670,11 @@ body {
 
 .contacts_address {
   font-style: normal;
+  margin-bottom: 32px;
 }
 
-.contacts_address_text, .contacts_tel {
+.contacts_address_text,
+.contacts_tel {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -627,7 +692,6 @@ body {
   line-height: 20px;
   color: #565C66;
   margin: 0;
-  margin-bottom: 32px;
 }
 
 /* footer */
@@ -650,11 +714,12 @@ body {
 }
 
 .main_footer_list {
-  width: 105px;
+  width: 110px;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   display: flex;
-  column-gap: 16px;
+  column-gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -698,6 +763,10 @@ body {
 }
 
 /*  catalog pages  */
+.catalog_header {
+  margin-bottom: 16px
+}
+
 .main_catalog {
   color: #2D3440;
   background-color: #FEAFC3;
@@ -716,8 +785,20 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 16px;
 }
 
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.breadcrumbs_item:not(:last-child) {
+  margin-right: 28px;
+
+}
 .breadcrumbs_link {
   font-weight: 700;
   font-size: 14px;
@@ -736,27 +817,35 @@ body {
   margin-bottom: 95px;
 }
 
+.catalog_filter{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px 24px;
+}
+
 .catalog_filter_group,
 .sorting_list_wrapper {
   background-color: #FFCBD8;
   border-radius: 18px;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.sorting_list_wrapper {
-  width: 200px;
-  margin-right: 24px;
-}
-
-.catalog_filter_group {
-  margin-right: 16px;
+.catalog_filter_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .sorting_line_one {
   margin-bottom: 44px;
+  align-items: center;
 }
 
-.sorting_line_one, .sorting_line_two {
+.sorting_line_one,
+.sorting_line_two {
   display: flex;
 }
 
@@ -784,18 +873,43 @@ body {
 .pagination {
   color: #2D3440;
   background-color: #FEAFC3;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end
+}
+
+.pagination-item {
+  min-width: 24px;
+  min-height: 24px;
+  text-align: center;
 }
 
 .pagination_link {
   color: #2D3440;
   text-decoration: none;
   line-height: 20px;
+  padding: 2px 7px;
+  display: block;
 }
 
 .pagination-current {
   border-radius: 76px;
   background-color: #FCFCFC;
 }
+
+.pagination-prev,
+.pagination-next {
+  width: 16px;
+  height: 16px;
+}
+
+.button_pagination {
+  display: flex;
+  padding: 41px;
+}
+
 /* feedback */
 .feedback {
   display: none;
