@@ -943,7 +943,7 @@ body {
 
 .pagination_wrap {
   display: grid;
-  grid-template-columns: auto max-content auto;
+  grid-template-columns: 33% max-content 33%;
   justify-content: space-between;
   align-items: center;
 }
@@ -956,8 +956,8 @@ body {
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  grid-column: 2 / -1;
-  grid-row: 1 / 1;
+  grid-column: 3 / -1;
+  grid-row: 1 / 2;
 }
 
 .pagination-item {
@@ -987,7 +987,7 @@ body {
 
 .button_pagination {
   grid-column: 2 / 3;
-  grid-row: 1 / 1;
+  grid-row: 1 / 2;
 }
 
 /* feedback */
