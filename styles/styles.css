@@ -166,7 +166,7 @@ body {
   padding: 16px;
 }
 
-.header_nav_user .header_nav_item{
+.header_nav_user .header_nav_item {
   min-width: 16px;
   min-height: 16px;
 }
@@ -428,6 +428,12 @@ body {
   margin-bottom: 8px;
 }
 
+.product_card_content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .product_card_description {
   font-size: 16px;
   line-height: 22px;
@@ -438,6 +444,7 @@ body {
 .product_card_price_wrap{
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .product_card_price {
