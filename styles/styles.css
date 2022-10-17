@@ -89,6 +89,11 @@ body {
   outline: 2px solid #2D3440;
 }
 
+.button:active {
+  background:#FCFCFC;
+  outline: 2px solid #2D3440;
+}
+
 .button:disabled {
   color: #B9B9B9;
   background:#E7E7E7;
@@ -114,6 +119,12 @@ body {
 .button_submit:focus {
   background:#FF2F64;
   outline: 2px solid #2D3440;
+  color: #FCFCFC;
+}
+
+.button_submit:active {
+  background:#FEAFC3;
+  outline: 4px solid #2D3440;
   color: #FCFCFC;
 }
 
@@ -185,17 +196,22 @@ body {
   padding: 6px 16px;
   display: block;
   position: relative;
+  border-radius: 30px;
 }
 
-.header_nav_link:hover{
+/* действия кнопки в момент false*/
+.header_nav_link:hover {
   background-color: #fcfcfc80;;
-  border-radius: 30px;
 }
 
-.header_nav_link:focus{
+.header_nav_link:focus {
   background-color: #fcfcfc80;
-  border-radius: 30px;
   outline: 2px solid #000000;
+}
+
+.header_nav_link:active {
+  background-color: #FCFCFC;
+  outline: none;
 }
 
 .header_nav_user .header_nav_link {
@@ -224,6 +240,11 @@ body {
   outline: 2px solid #2D3440;
 }
 
+.user_nav_items:active {
+  background-color: #FCFCFC;
+  outline: none;
+}
+
 .header_nav_user .header_nav_item:not(:last-child) {
   margin-right: 16px;
 }
@@ -239,8 +260,6 @@ body {
 
 .header_seach svg {
   left: 0;
-  top: 0;
-  bottom: 0;
   right: 0;
   margin: auto;
 }
@@ -535,6 +554,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  align-items: center;
 }
 
 .product_card_price {
@@ -545,6 +565,61 @@ body {
   background-color: #FCFCFC;
 }
 
+.product_card_button{
+  display: block;
+  background-color: #FF2F64;
+  padding: 10px;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 26px;
+}
+
+.card_icon {
+position: absolute;
+  fill:#FCFCFC;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:0;
+  margin: auto;
+}
+
+.product_card_button:hover {
+  background-color:#FCFCFC;
+  outline: 2px solid #FF2F64;
+}
+
+.product_card_button:hover .card_icon{
+  fill: #000000;
+}
+
+.product_card_button:focus {
+  background-color:#FF2F64;
+  outline: 2px solid #2D3440;
+}
+
+.product_card_button:focus .card_icon{
+  fill:#FCFCFC;
+}
+
+.product_card_button:active {
+  background-color:#FFCBD8;
+  outline: 2px solid #FF2F64;
+}
+
+.product_card_button:active .card_icon{
+  fill:#2D3440;
+}
+
+.product_card_button:disabled{
+  background-color:#B9B9B9;
+}
+
+.product_card_button:disabled .card_icon{
+  fill:#565C66;
+}
 /* about_gllacyshop */
 .about_gllacyshop {
   background-color:  #F3EBDC;
@@ -1046,6 +1121,22 @@ body {
   background-color: #FCFCFC;
 }
 
+.sorting_button:focus {
+  outline: 2px solid #2D3440;
+  background-color: #fcfcfc4d;;
+}
+
+.sorting_button:active {
+  outline: none;
+  background-color: #fcfcfc80;;
+}
+
+.sorting_button:disabled {
+  background-color: #FFCBD8;
+  outline: 2px solid #FCFCFC;
+  opacity: 0.5;
+}
+
 .pagination_wrap {
   display: grid;
   grid-template-columns: 33% max-content 33%;
@@ -1066,12 +1157,17 @@ body {
   align-items: center;
 }
 
-.pagination-item:hover{
+.pagination-item:hover {
   background: #fcfcfc80;
   border-radius: 50%;
 }
 
-.pagination-item:focus{
+.pagination-item:active {
+  background: #fcfcfc80;;
+  outline: 1px solid #FCFCFC;
+}
+
+.pagination-item:focus {
   background: #fcfcfc4d;
   outline: 1px solid #2D3440;
 }
@@ -1086,7 +1182,7 @@ body {
   text-decoration: none;
   line-height: 20px;
   border-radius: 76px;
-  padding: 2px 8px;
+  padding: 2px 7px;
   box-sizing: border-box;
 }
 
@@ -1107,7 +1203,9 @@ body {
   background-position: center;
 }
 
-
+.pagination_disabled{
+  opacity: 0.5;
+}
 
 .pagination-prev,
 .pagination-next {
