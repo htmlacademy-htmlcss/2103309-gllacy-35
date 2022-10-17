@@ -79,6 +79,7 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+
 .button:hover {
   background:#FFCBD8;
   outline: 4px solid #FCFCFC;
@@ -174,8 +175,6 @@ body {
 .header_nav {
   margin-left: 16px;
 }
-
-
 
 .header_nav_list {
   line-height: 20px;
@@ -273,8 +272,6 @@ body {
   min-height: 16px;
 }
 
-
-
 .catalog_item,
 .header_nav_item {
   list-style-type: none;
@@ -312,8 +309,6 @@ body {
 .user_login_active {
   display: none;
 }
-
-
 
 /*  pages  */
 .main_index {
@@ -365,11 +360,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
-}
-
-.button_prev{
-
-
 }
 
 .slider_pagination,
@@ -591,7 +581,7 @@ position: absolute;
   outline: 2px solid #FF2F64;
 }
 
-.product_card_button:hover .card_icon{
+.product_card_button:hover .card_icon {
   fill: #000000;
 }
 
@@ -600,7 +590,7 @@ position: absolute;
   outline: 2px solid #2D3440;
 }
 
-.product_card_button:focus .card_icon{
+.product_card_button:focus .card_icon {
   fill:#FCFCFC;
 }
 
@@ -609,17 +599,18 @@ position: absolute;
   outline: 2px solid #FF2F64;
 }
 
-.product_card_button:active .card_icon{
+.product_card_button:active .card_icon {
   fill:#2D3440;
 }
 
-.product_card_button:disabled{
+.product_card_button:disabled {
   background-color:#B9B9B9;
 }
 
-.product_card_button:disabled .card_icon{
+.product_card_button:disabled .card_icon {
   fill:#565C66;
 }
+
 /* about_gllacyshop */
 .about_gllacyshop {
   background-color:  #F3EBDC;
