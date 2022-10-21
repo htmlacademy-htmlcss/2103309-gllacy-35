@@ -15,11 +15,11 @@
         <li class="header_nav_item header_active_catalog">
           <a href="#" class="header_nav_link catalog_arrow">Каталог</a>
             <ul class="catalog_list">
-              <li class="catalog_item"><a href="#" class="header_nav_link">Новинки</a></li>
-              <li class="catalog_item"><a href="#" class="header_nav_link">Сливочное</a></li>
-              <li class="catalog_item"><a href="#" class="header_nav_link">Щербеты</a></li>
-              <li class="catalog_item"><a href="#" class="header_nav_link">Фруктовый лед</a></li>
-              <li class="catalog_item"><a href="#" class="header_nav_link">Мелорин</a></li>
+              <li class="catalog_item"><a href="#" class="header_catalog_link catalog_new">Новинки</a></li>
+              <li class="catalog_item"><a href="#" class="header_catalog_link">Сливочное</a></li>
+              <li class="catalog_item"><a href="#" class="header_catalog_link">Щербеты</a></li>
+              <li class="catalog_item"><a href="#" class="header_catalog_link">Фруктовый лед</a></li>
+              <li class="catalog_item"><a href="#" class="header_catalog_link">Мелорин</a></li>
             </ul>
         </li>
         <li class="header_nav_item">
@@ -34,16 +34,18 @@
       <li class="header_nav_item">
         <a href="tel:+78005558628" class="header_nav_link contacts_phone">+7 800 555-86-28</a>
       </li>
-      <li class="header_nav_item">
+      <li class="header_nav_item search_popover">
         <a href="#" class="header_nav_link user_nav_items header_seach">
           <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/>
           </svg>
             <span class="visually_hidden">Поиск</span>
         </a>
+        <div class="search">
           <form class="header_nav_search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="search" class="search_form" placeholder="Поиск по сайту">
+            <input class="form_field header_seach_input" type="text" name="search" class="search_form" placeholder="Поиск по сайту">
           </form>
+        </div>
       </li>
       <li class="header_nav_item">
         <ul class="header_nav_item user_login_list">
@@ -55,15 +57,15 @@
                 <span>Вход</span>
             </a>
             <div class="user_login_active">
-              <p>Личный кабинет</p>
+              <h2 class="login_title">Личный кабинет</h2>
               <form  class="user_login_form" action="https://echo.htmlacademy.ru" method="post">
-                <input type="text" name="email" class="user_login_email" placeholder="email@example.com">
-                <input type="password" name="password" class="user_login_password">
-                <button type="button" class="user_login_button ">Войти</button>
+                <input class="form_field login_input" type="text" name="email" class="user_login_email" placeholder="email@example.com">
+                <input class="form_field login_input" type="password" name="password" class="user_login_password">
               </form>
+                <button type="button" class="button button_submit user_login_button">Войти</button>
               <ul class="user_login_help_list">
-                <li class="user_login_help_item"><a href="#" class="header_nav_link">Забыли пароль?</a></li>
-                <li class="user_login_help_item"><a href="#" class="header_nav_link">Регистрация</a></li>
+                <li class="user_login_help_item"><a href="#" class="login_help_link">Забыли пароль?</a></li>
+                <li class="user_login_help_item"><a href="#" class="login_help_link">Регистрация</a></li>
               </ul>
             </div>
           </li>

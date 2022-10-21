@@ -277,21 +277,104 @@ body {
   list-style-type: none;
 }
 
-.catalog_list {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  display: none;
+.header_catalog_link {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  padding: 6px 16px;
+  position: relative;
+
 }
 
-.header_active_catalog a:first-of-type {
+.catalog_item:first-child .header_catalog_link {
+  padding-bottom: 8px;
+}
+
+.catalog_new {
+  font-weight: 700;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.catalog_list:after {
+  content: "";
+  display: block;
+  width: 103px;
+  height: 2px;
+  background-color: #B9B9B9;
+  position: absolute;
+  top: 44px;
+  left: 16px;
+}
+
+.header_active_catalog .header_nav_link:first-of-type {
   padding-right: 38px;
 }
 
-.header_nav_search {
-  display: none;
+.header_active_catalog {
+  position: relative;
 }
 
+/*поповер каталога в шапке*/
+.catalog_list {
+  position: absolute;
+  display: grid;
+  flex-direction: column;
+  width: 138px;
+  min-height: 188px;
+  background-color: #FCFCFC;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  padding: 0;
+  border-radius: 4px;
+  z-index: 1;
+  box-sizing: border-box;
+  margin-top: 8.15px;
+  left: 0;
+}
+
+.catalog_list .catalog_item:hover {
+    background-color: #FFCBD8;
+}
+
+.catalog_list .catalog_item:first-child:hover,
+.catalog_list .catalog_item:first-child:active {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;;
+}
+
+.catalog_list .catalog_item:active {
+  background-color: #FF7799;
+}
+
+.search_popover {
+  position: relative;
+}
+
+/*поповер поиска в шапке*/
+.search {
+  display: none;
+  width: 356px;
+  position: absolute;
+  right: 0;
+  margin-top: 8.15px;
+  z-index: 2;
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+}
+
+.header_nav_search {
+  display: flex;
+  padding: 24px 16px;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+}
+
+.header_seach_input{
+  display: flex;
+  flex-grow: 1;
+}
 .nav_user_text {
   font-size: 14px;
 }
@@ -301,13 +384,61 @@ body {
   padding: 0;
 }
 
-.user_login_help_list {
-  list-style-type: none;
-  padding: 0;
+
+
+.user_login_item{
+  position: relative;
 }
 
 .user_login_active {
-  display: none;
+  position: absolute;
+  width: 420px;
+  background-color: #FCFCFC;
+  padding: 48px 48px 52px 48px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, max-content);
+  margin-top: 8.15px;
+  right: 0;
+  z-index: 2;
+  border-radius: 4px;
+  align-items: center;
+  row-gap: 32px;
+}
+
+.login_title{
+  margin: 0;
+  grid-column: 1 / -1;
+}
+
+.user_login_form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  grid-column: 1 / -1;
+}
+
+.login_input{
+  display: flex;
+  flex-grow: 1;
+}
+
+.user_login_button {
+grid-column: 1 / 2;
+grid-row: 3 / -1;
+}
+
+.user_login_help_list {
+  list-style-type: none;
+  padding: 0;
+  grid-column: 2 / -1;
+  grid-row:  3 / -1;
+}
+
+.login_help_link{
+  display: block;
+  margin-left: 23px;
+  color: inherit;
 }
 
 /*  pages  */
