@@ -15,7 +15,7 @@
       <ul class="header_nav_list">
         <li class="header_nav_item header_active_catalog">
           <a href="#" class="header_nav_link catalog_arrow">Каталог</a>
-            <ul class="catalog_list ">
+            <ul class="catalog_list">
               <li class="catalog_item"><a href="#" class="header_catalog_link catalog_new">Новинки</a></li>
               <li class="catalog_item"><a href="#" class="header_catalog_link">Сливочное</a></li>
               <li class="catalog_item"><a href="#" class="header_catalog_link">Щербеты</a></li>
@@ -83,34 +83,34 @@
 <!--поповер корзины-->
             <div class="user_card ">
               <h2 class="user_card_title">Корзина</h2>
-                <ul class="user_card_list">
-                  <li class="user_card_item">
-                      <div class="card_item">
-                        <img class="user_card_product_pic" src="/images/other_icons/icecream_mini_strawsberry.jpg" alt="Шарик мороженого Малинка.">
-                        <h3 class="card_pic_title">Малинка</h3>
-                        <p class="card_price">1 кг х 310 ₽</p>
-                      </div>
-                      <p class="card_product_price">310 ₽</p>
-                      <button class="user_card_item_btn" type="button">
-                        <span class="visually_hidden">Удалить из корзины</span>
-                      </button>
-                  </li>
+              <ul class="user_card_list">
+                <li class="user_card_item">
+                  <div class="card_item">
+                    <img class="user_card_product_pic" src="/images/other_icons/icecream_mini_strawsberry.jpg" alt="Шарик мороженого Малинка.">
+                    <h3 class="card_pic_title">Малинка</h3>
+                    <p class="card_price">1 кг х 310 ₽</p>
+                  </div>
+                  <p class="card_product_price">310 ₽</p>
+                  <button class="user_card_item_btn" type="button">
+                    <span class="visually_hidden">Удалить из корзины</span>
+                  </button>
+                </li>
 
-                  <li class="user_card_item">
-                      <div class="card_item">
-                        <img class="user_card_product_pic" src="/images/other_icons/icecream_mini_buble.jpg" alt="Шарик мороженого Бабл-гам.">
-                        <h3 class="card_pic_title">Бабл-гам</h3>
-                        <p class="card_price">1,5 кг х 320 ₽</p>
-                      </div>
-                      <p class="card_product_price">480 ₽</p>
-                        <button class="user_card_item_btn" type="button">
-                          <span class="visually_hidden">Удалить из корзины</span>
-                        </button>
-                  </li>
-                </ul>
-                <div class="order_total">
-                  <button type="submit" class="button button_submit">Оформить заказ</button>
-                  <p class="card_product_price"> Итого: 790 ₽</p>
+                <li class="user_card_item">
+                  <div class="card_item">
+                    <img class="user_card_product_pic" src="/images/other_icons/icecream_mini_buble.jpg" alt="Шарик мороженого Бабл-гам.">
+                    <h3 class="card_pic_title">Бабл-гам</h3>
+                    <p class="card_price">1,5 кг х 320 ₽</p>
+                  </div>
+                  <p class="card_product_price">480 ₽</p>
+                  <button class="user_card_item_btn" type="button">
+                    <span class="visually_hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="order_total">
+                <button type="submit" class="button button_submit">Оформить заказ</button>
+                <p class="card_product_price"> Итого: 790 ₽</p>
               </div>
             </div>
           </a>
@@ -161,10 +161,13 @@
               </div>
               <div class="range_main_line">
                 <div class="range_line" style="left: 32px; width: 72px;">
-                  <button type="button" class="range_switch range_switch_min"></button>
-                  <button type="button" class="range_switch range_switch_max"></button>
+                  <button type="button" class="range_switch range_switch_min">
+                    <span class="visually_hidden">Минимальная цена.</span>
+                  </button>
+                  <button type="button" class="range_switch range_switch_max">
+                    <span class="visually_hidden">Максимальная цена.</span>
+                  </button>
                 </div>
-
               </div>
             </div>
         </fieldset>
