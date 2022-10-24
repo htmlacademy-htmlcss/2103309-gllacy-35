@@ -632,7 +632,6 @@ input[type="search"]:focus {
 .button_next {
   transform: rotate(180deg);
   right: -21px;
-
 }
 
 .slider_list {
@@ -698,7 +697,7 @@ input[type="search"]:focus {
   z-index: 1;
 }
 
-.main_picture::after{
+.main_picture::after {
   content: "";
   width: 312px;
   height: 312px;
@@ -710,7 +709,6 @@ input[type="search"]:focus {
   transform: translateY(-50%);
   z-index: -1;
 }
-
 
 .slider_button:hover .slader_button_svg {
   background-color: #FCFCFC;
