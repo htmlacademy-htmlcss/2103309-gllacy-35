@@ -8,7 +8,7 @@
 <body>
 <!--header-->
 <div class="page_container">
-  <header class="main_header">
+  <header class="main_header catalog_main_header">
     <img src="images/logo.svg" width="137" height="56" alt="Logo of GllacyShop.">
     <nav class="header_nav">
       <ul class="header_nav_list">
@@ -34,16 +34,16 @@
       <li class="header_nav_item">
         <a href="tel:+78005558628" class="header_nav_link contacts_phone">+7 800 555-86-28</a>
       </li>
-      <li class="header_nav_item search_popover ">
+      <li class="header_nav_item search_popover">
         <a href="#" class="header_nav_link user_nav_items header_seach">
           <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" fill="#2D3440"/>
           </svg>
             <span class="visually_hidden">Поиск</span>
         </a>
-        <div class="search ">
+        <div class="search">
           <form class="header_nav_search" action="https://echo.htmlacademy.ru" method="post">
-            <input class="form_field header_seach_input" type="search" name="search" class="search_form" placeholder="Поиск по сайту">
+            <input class="form_field header_seach_input search_form" type="search" name="search" placeholder="Поиск по сайту">
           </form>
         </div>
       </li>
@@ -61,9 +61,9 @@
               <h2 class="login_title">Личный кабинет</h2>
               <form  class="user_login_form" action="https://echo.htmlacademy.ru" method="get">
                 <label for="login_email" class="visually_hidden">Почта</label>
-                  <input class="form_field login_input" id="login_email" type="text" name="email" class="user_login_email" placeholder="email@example.com">
+                  <input class="form_field login_input user_login_email" id="login_email" type="text" name="email" placeholder="email@example.com">
                 <label for="login_password" class="visually_hidden">Почта</label>
-                  <input class="form_field login_input" id="login_password" type="password" name="password" class="user_login_password">
+                  <input class="form_field login_input user_login_password" id="login_password" type="password" name="password">
                   <button type="submit" class="button button_submit user_login_button">Войти</button>
               </form>
               <ul class="user_login_help_list">
@@ -78,7 +78,7 @@
               <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" fill="#2D3440"/>
             </svg>
-            <span>Пусто</span>
+            <span>2 товара</span>
 <!--поповер корзины-->
             <div class="user_card ">
               <h2 class="user_card_title">Корзина</h2>
@@ -146,18 +146,18 @@
             </select>
           </div>
         </fieldset>
-
         <fieldset class="catalog_filter_group">
-          <legend class="price_slider_range visually_hidden">Цена:</legend>
-            <div class="range">
-              <div class="range_prices">
-                <label class="catalog_price"> Цена:
-                  <input class="range_input" type="number" name="min_price" value="100">₽ -&ensp;
-                </label>
-                <label class="catalog_price">
-                  <input class="range_input" type="number" name="max_price" value="500">₽
-                </label>
-              </div>
+          <legend class="visually_hidden">Цена:</legend>
+          <div class="range">
+            <div class="range_prices">
+              <label class="catalog_price">Цена:
+                <input class="range_input" type="number" value="100" name="min_price">₽ -
+              </label>
+              <label class="catalog_price">
+                <input class="range_input" type="number" value="500" name="max_price"> ₽
+              </label>
+            </div>
+            <div class="range_wrapper">
               <div class="range_main_line">
                 <div class="range_line" style="left: 32px; width: 72px;">
                   <button type="button" class="range_switch range_switch_min">
@@ -169,10 +169,10 @@
                 </div>
               </div>
             </div>
+          </div>
         </fieldset>
-
         <fieldset class="catalog_filter_group">
-          <legend class="catalog_filter_title">Жирность</legend>
+          <legend class="catalog_filter_title">Жирность:</legend>
             <ul class="catalog_filter_list">
               <li class="catalog_filter_item">
                 <label class="control">
@@ -206,8 +206,8 @@
         </fieldset>
 
         <fieldset class="catalog_filter_group">
-          <legend class="catalog_filter_title">Наполнители</legend>
-            <ul class="catalog_filter_list">
+          <legend class="catalog_filter_title">Наполнители:</legend>
+            <ul class="catalog_filter_list catalog_fillers">
               <li class="catalog_filter_item">
                 <label class="control">
                   <input class="control_input visually_hidden" type="checkbox" name="chocolad">
@@ -368,7 +368,7 @@
               <b class="product_card_price">340 ₽/кг</b>
               <a class="product_card_button" href="#"><span class="visually_hidden">Купить</span>
                 <svg class="card_icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="card_icon"  class="card_icon" fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="#FCFCFC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="#FCFCFC"/>
                 </svg>
               </a>
             </div>
@@ -470,7 +470,7 @@
               <p class="product_card_description">Фисташковый пломбир с шоколадным сиропом</p>
             </a>
             <div class="product_card_price_wrap">
-              <b class="product_card_price">310 ₽/кг</b>
+              <b class="product_card_price">360 ₽/кг</b>
               <a class="product_card_button" href="#"><span class="visually_hidden">Купить</span>
                 <svg  class="card_icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path  class="card_icon" fill-rule="evenodd" clip-rule="evenodd" d="M1.2.3a.7.7 0 1 0 0 1.3h1.7l.5 2.3 1 5a1.8 1.8 0 0 0 1.8 1.4h5.6a1.8 1.8 0 0 0 1.8-1.5l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.8c0-.3-.3-.6-.6-.6H1.2Zm4.5 8.2-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="#FCFCFC"/>
@@ -530,7 +530,7 @@
         </li>
       </ul>
       <button class="button button_pagination" type="button">Показать ещё</button>
-  </div>
+    </div>
   </main>
 <!--main_footer-->
 <footer class="main_footer">
