@@ -44,7 +44,7 @@
         </a>
         <div class="search">
           <form class="header_nav_search" action="https://echo.htmlacademy.ru" method="post">
-            <input class="form_field header_seach_input search_form " type="search" name="search" placeholder="Поиск по сайту">
+            <input class="form_field header_seach_input search_form" type="search" name="search" placeholder="Поиск по сайту">
           </form>
         </div>
       </li>
@@ -60,11 +60,11 @@
 <!--поповер личного кабинета-->
             <div class="user_login_active">
               <h2 class="login_title">Личный кабинет</h2>
-              <form  class="user_login_form" action="https://echo.htmlacademy.ru" method="get">
+              <form class="user_login_form" action="https://echo.htmlacademy.ru" method="get">
                 <label for="login_email" class="visually_hidden">Почта.</label>
-                  <input class="form_field login_input user_login_email " id="login_email" type="text" name="email" placeholder="email@example.com">
+                  <input class="form_field login_input user_login_email" id="login_email" type="text" name="email" placeholder="email@example.com" required>
                 <label for="login_password" class="visually_hidden">Пароль.</label>
-                  <input class="form_field login_input user_login_password " id="login_password" type="password" name="password">
+                  <input class="form_field login_input user_login_password" id="login_password" type="password" name="password" required autocomplete="off">
                   <button type="submit" class="button button_submit user_login_button">Войти</button>
               </form>
               <ul class="user_login_help_list">
@@ -81,7 +81,7 @@
             </svg>
             <span>2 товара</span>
 <!--поповер корзины-->
-            <div class="user_card ">
+            <div class="user_card">
               <h2 class="user_card_title">Корзина</h2>
               <ul class="user_card_list">
                 <li class="user_card_item">
@@ -187,8 +187,8 @@
             <svg aria-hidden="true" focusable="false" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z" fill="#FCFCFC"/>
             </svg>
-              <span class="visually_hidden">Vkontakte.</span>
-            </a>
+            <span class="visually_hidden">Vkontakte.</span>
+          </a>
         </li>
           <li class="main_social_media_item">
           <a class="main_social_media_link" href="#">
@@ -204,13 +204,13 @@
 <!--main_offer -->
   <section class="main_offer">
     <h2 class="title main_offer_title">Заказывайте мороженое и получайте подарки!</h2>
-      <ul class="offer_list">
+    <ul class="offer_list">
       <li class="offer_item">
         <div class="offer_item_text">
-        <h3 class="offer_list_title">Малинка даром!</h3>
-        <p class="offer_list_description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#" class="button link_button">Хочу подарок</a>
-      </div>
+          <h3 class="offer_list_title">Малинка даром!</h3>
+          <p class="offer_list_description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#" class="button link_button">Хочу подарок</a>
+        </div>
         <img class="offer_list_image" width="219" height="268" src="images/strawsberry.png" alt="Малинка в рожке.">
       </li>
       <li class="offer_item">
@@ -219,7 +219,7 @@
           <p class="offer_list_description">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных&nbsp;зефирок совершенно бесплатно.</p>
           <a href="#" class="button link_button">Хочу подарок</a>
         </div>
-          <img class="offer_list_image" width="219" height="268" src="images/marshmello.png" alt="Маршмеллоу в рожке.">
+        <img class="offer_list_image" width="219" height="268" src="images/marshmello.png" alt="Маршмеллоу в рожке.">
       </li>
     </ul>
   </section>
@@ -235,9 +235,9 @@
           <a href="#" class="product_link">
             <h3 class="product_card_title">Малинка</h3>
           </a>
-            <a href="#" class="product_link">
-              <p class="product_card_description">Сливочное мороженое с малиновым джемом</p>
-            </a>
+          <a href="#" class="product_link">
+            <p class="product_card_description">Сливочное мороженое с малиновым джемом</p>
+          </a>
           <div class="product_card_price_wrap">
             <b class="product_card_price">310 ₽/кг</b>
             <a class="product_card_button" href="#"><span class="visually_hidden">Купить.</span>
@@ -318,7 +318,7 @@
     <div class="about_gllacyshop_info_wrapper">
       <h1 class="title about_gllacyshop_title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
       <ul class="about_gllacyshop_list">
-        <li class="about_gllacyshop_item  gllacyshop_icecream_icon">
+        <li class="about_gllacyshop_item gllacyshop_icecream_icon">
           <h3 class="visually_hidden">Лучшее оборудование.</h3>
           <p class="about_gllacyshop_description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
         </li>
@@ -326,11 +326,11 @@
           <h3 class="visually_hidden">Проверенные поставщики.</h3>
           <p class="about_gllacyshop_description">Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с которыми нас&nbsp;связывает долговременное сотрудничество.</p>
         </li>
-        <li class="about_gllacyshop_item  gllacyshop_leaf_icon">
+        <li class="about_gllacyshop_item gllacyshop_leaf_icon">
           <h3 class="visually_hidden">Высочайшее качество сырья.</h3>
           <p class="about_gllacyshop_description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и&nbsp;добавки произведены из натурального сырья.</p>
         </li>
-        <li class="about_gllacyshop_item  gllacyshop_thermometr_icon">
+        <li class="about_gllacyshop_item gllacyshop_thermometr_icon">
           <h3 class="visually_hidden">Бережная доставка.</h3>
           <p class="about_gllacyshop_description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
         </li>
@@ -339,13 +339,13 @@
   </section>
 <!--blog_and_subscribe-->
   <div class="blog_and_subscribe">
-  <section class="blog">
-    <h2 class="visually_hidden">Новости блога.</h2>
-    <p class="blog_subtitle">Новое в нашем блоге</p>
-    <div class="blog_link">
-      <a class="blog_new_title" href="new.html">10 способов сервировки фруктовых щербетов<br>к столу</a>
-    </div>
-  </section>
+    <section class="blog">
+      <h2 class="visually_hidden">Новости блога.</h2>
+      <p class="blog_subtitle">Новое в нашем блоге</p>
+      <div class="blog_link">
+        <a class="blog_new_title" href="new.html">10 способов сервировки фруктовых щербетов<br>к столу</a>
+      </div>
+    </section>
 <!--subscribe-->
     <section class="subscribe">
       <div class="subscribe_info_wrapper">
@@ -353,8 +353,8 @@
         <p class="subscribe_description">Подпишитесь на нашу сладкую рассылку и будьте всегда <br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post">
           <label for="email" class="visually_hidden">Почта.</label>
-            <input class="form_field " type="text" id="email" name="subscribe_email" placeholder="email@example.com">
-            <button class="button button_submit" type="submit">Отправить</button>
+          <input class="form_field" type="text" id="email" name="subscribe_email" placeholder="email@example.com" required>
+          <button class="button button_submit" type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -371,14 +371,14 @@
         <label class="form_label" for="date">
           Дата
           <button type="button" class="delivery_info tooltip">
-              <span class="tooltiptext">Введите желаемую дату доставки</span>
+            <span class="tooltiptext">Введите желаемую дату доставки</span>
           </button>
         </label>
-        <input class="form_field " type="text" id="date" name="date" placeholder="01.04.2020">
+        <input class="form_field" type="text" id="date" name="date" placeholder="01.04.2020" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{4}" required>
       </p>
       <p class="delivery_label delivery_form_tel">
         <label for="tel">Телефон</label>
-        <input class="form_field " type="text" id="tel" name="delivery_tel" placeholder="+7 800 999-00-00">
+        <input class="form_field" type="text" id="tel" name="delivery_tel" placeholder="+7 800 999-00-00" required>
       </p>
       <p class="delivery_label delivery_form_address">
         <label class="form_label" for="address">
@@ -387,7 +387,7 @@
             <span class="tooltiptext">Введите название улицы, дома и квартиры</span>
           </button>
         </label>
-        <input class="form_field " type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
+        <input class="form_field" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required>
       </p>
         <button class="button button_submit button_form" type="submit">Oтправить</button>
     </form>
@@ -455,10 +455,13 @@
       <h3 class="feedback_title">Мы обязательно ответим вам!</h3>
       <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
         <button class="feedback_close" type="button"><span class="visually_hidden">close</span></button>
-            <input class="form_field " type="text" name="name" id="name" placeholder="Имя и фамилия">
-            <input class="form_field " type="email" name="email" id="feedback_email" placeholder="email@example.com">
-            <textarea class="form_field feedback_area " name="message" id="message" rows="6" placeholder="В свободной форме"></textarea>
-          <button class="button button_submit feedback_button" type="submit">Oтправить</button>
+        <label class="visually_hidden" for="name">Имя и фамилия.</label>
+        <input class="form_field" type="text" name="name" id="name" placeholder="Имя и фамилия">
+        <label class="visually_hidden" for="name">Электронная почта.</label>
+        <input class="form_field" type="email" name="email" id="feedback_email" placeholder="email@example.com">
+        <label class="visually_hidden" for="message">Сообщение.</label>
+        <textarea class="form_field feedback_area" name="message" id="message" rows="6" placeholder="В свободной форме"></textarea>
+        <button class="button button_submit feedback_button" type="submit">Oтправить</button>
       </form>
     </section>
   </div>
