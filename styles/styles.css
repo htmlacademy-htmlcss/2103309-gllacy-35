@@ -1176,11 +1176,8 @@ input[type="search"]:focus {
   margin-bottom: 13px;
 }
 
-.blog_link {
-  max-width: 305px;
-}
-
 .blog_new_title {
+  max-width: 305px;
   display: block;
   font-weight: 700;
   font-size: 24px;
@@ -1387,13 +1384,12 @@ input[type="search"]:focus {
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  left: -1.9px;
+  left: -7px;
   width: 11px;
   height: 11px;
   background-color: #FFF;
   border: 1px solid #B9B9B9;
   top: 11px;
-  margin-left: -5px;
   transform: rotate(45deg);
   border-top-color: transparent;
   border-right-color: transparent;
@@ -1823,7 +1819,8 @@ input[type='number'] {
   font-family: inherit;
   font-weight: inherit;
   background-color: #FFCBD8;
-  background: url(../images/other_icons/catalog_select_icon.svg) no-repeat;
+  background-image: url(../images/other_icons/catalog_select_icon.svg);
+  background-repeat: no-repeat;
   background-position: right 15px center;
   -webkit-appearance: none;
           appearance: none;
