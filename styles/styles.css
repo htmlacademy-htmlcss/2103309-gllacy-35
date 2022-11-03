@@ -455,7 +455,6 @@ input[type="search"]:focus {
   width: 420px;
   background-color: #FCFCFC;
   padding: 48px 48px 52px 48px;
-  display: block;
   margin-top: 8px;
   right: 0;
   z-index: 2;
@@ -1418,9 +1417,6 @@ input[type="search"]:focus {
   border-radius: 8px;
   padding: 40px;
   margin: 64px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   box-sizing: border-box;
 }
 
@@ -1972,16 +1968,16 @@ input[type='number'] {
 
 /* пагинация */
 .pagination_wrap {
-  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 36px 0;
 }
 
 .button_pagination {
-  position: absolute;
   margin: auto;
-  left: 41.6%;
-  top: 41px;
-  right: 43%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 1;
 }
 
 .pagination {
@@ -1995,7 +1991,7 @@ input[type='number'] {
   align-items: center;
   flex-wrap: wrap;
   row-gap: 2px;
-  justify-content: flex-end;
+  grid-column: 3 / -1;
 }
 
 .pagination-item:hover {
