@@ -33,7 +33,7 @@
     </nav>
     <ul class="header_nav_list header_nav_user">
       <li class="header_nav_item">
-        <a href="tel:+78005558628" class="header_nav_link contacts_phone"> +7 800 555-86-28</a>
+        <a href="tel:+78005558628" class="header_nav_link contacts_phone">+7 800 555-86-28</a>
       </li>
       <li class="header_nav_item search_popover">
         <a href="#" class="header_nav_link user_nav_items header_seach">
@@ -42,6 +42,7 @@
           </svg>
           <span class="visually_hidden">Поиск.</span>
         </a>
+<!--поповер поля поиска-->
         <div class="search">
           <form class="header_nav_search" action="https://echo.htmlacademy.ru" method="post">
             <label for="search" class="visually_hidden">Поиск по сайту</label>
@@ -63,15 +64,15 @@
               <h2 class="login_title">Личный кабинет</h2>
               <form class="user_login_form" action="https://echo.htmlacademy.ru" method="get">
                 <label for="login_email" class="visually_hidden">Почта.</label>
-                  <input class="form_field login_input user_login_email" id="login_email" type="text" name="email" placeholder="email@example.com" required>
+                  <input class="form_field login_input" id="login_email" type="text" name="email" placeholder="email@example.com" required>
                 <label for="login_password" class="visually_hidden">Пароль.</label>
-                  <input class="form_field login_input user_login_password" id="login_password" type="password" name="password" required autocomplete="off">
+                  <input class="form_field login_input" id="login_password" type="password" name="password" required autocomplete="off">
                   <button type="submit" class="button button_submit user_login_button">Войти</button>
+                  <ul class="user_login_help_list">
+                    <li class="user_login_help_item"><a href="#" class="login_help_link">Забыли пароль?</a></li>
+                    <li class="user_login_help_item"><a href="#" class="login_help_link">Регистрация</a></li>
+                  </ul>
               </form>
-              <ul class="user_login_help_list">
-                <li class="user_login_help_item"><a href="#" class="login_help_link">Забыли пароль?</a></li>
-                <li class="user_login_help_item"><a href="#" class="login_help_link">Регистрация</a></li>
-              </ul>
             </div>
           </li>
         </ul>

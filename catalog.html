@@ -42,6 +42,7 @@
           </svg>
           <span class="visually_hidden">Поиск.</span>
         </a>
+<!--поповер поля поиска-->
         <div class="search">
           <form class="header_nav_search" action="https://echo.htmlacademy.ru" method="post">
             <label for="search" class="visually_hidden">Поиск по сайту</label>
@@ -63,15 +64,15 @@
               <h2 class="login_title">Личный кабинет</h2>
               <form  class="user_login_form" action="https://echo.htmlacademy.ru" method="get">
                 <label for="login_email" class="visually_hidden">Почта.</label>
-                  <input class="form_field login_input user_login_email" id="login_email" type="text" name="email" placeholder="email@example.com" required>
+                  <input class="form_field login_input" id="login_email" type="text" name="email" placeholder="email@example.com" required>
                 <label for="login_password" class="visually_hidden">Пароль.</label>
-                  <input class="form_field login_input user_login_password" id="login_password" type="password" name="password" required autocomplete="off">
+                  <input class="form_field login_input" id="login_password" type="password" name="password" required autocomplete="off">
                   <button type="submit" class="button button_submit user_login_button">Войти</button>
+                  <ul class="user_login_help_list">
+                    <li class="user_login_help_item"><a href="#" class="login_help_link">Забыли пароль?</a></li>
+                    <li class="user_login_help_item"><a href="#" class="login_help_link">Регистрация</a></li>
+                  </ul>
               </form>
-              <ul class="user_login_help_list">
-                <li class="user_login_help_item"><a href="#" class="login_help_link">Забыли пароль?</a></li>
-                <li class="user_login_help_item"><a href="#" class="login_help_link">Регистрация</a></li>
-              </ul>
             </div>
           </li>
         </ul>
@@ -87,7 +88,7 @@
               <ul class="user_card_list">
                 <li class="user_card_item">
                   <div class="card_item">
-                    <img class="user_card_product_pic" src="/images/other_icons/icecream_mini_strawsberry.jpg" alt="Шарик мороженого Малинка.">
+                    <img class="user_card_product_pic" src="images/other_icons/icecream_mini_strawsberry.jpg" alt="Шарик мороженого Малинка.">
                     <h3 class="card_pic_title">Малинка</h3>
                     <p class="card_price">1 кг х 310 ₽</p>
                   </div>
@@ -99,7 +100,7 @@
 
                 <li class="user_card_item">
                   <div class="card_item">
-                    <img class="user_card_product_pic" src="/images/other_icons/icecream_mini_buble.jpg" alt="Шарик мороженого Бабл-гам.">
+                    <img class="user_card_product_pic" src="images/other_icons/icecream_mini_buble.jpg" alt="Шарик мороженого Бабл-гам.">
                     <h3 class="card_pic_title">Бабл-гам</h3>
                     <p class="card_price">1,5 кг х 320 ₽</p>
                   </div>
